@@ -1,4 +1,4 @@
-package Main;
+package main;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -6,9 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.io.*;
 
+import net.Connection;
+
 import org.omg.CORBA.portable.InputStream;
 
-import Net.Connection;
+import data.Messages;
+import data.Session;
+import data.User;
 
 
 public class Server {
@@ -18,7 +22,6 @@ public class Server {
 	public static void main(String[] args) throws IOException {
 		System.out.println("Start Server");
 		Thread t = null;
-//		Users users = new Users();
 		List<User> users = new ArrayList<>();
 		Messages message = new Messages();
 		Runnable newSession = null;

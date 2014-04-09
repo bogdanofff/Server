@@ -3,7 +3,7 @@ package ObserverInterface;
 
 import java.util.List;
 
-import Main.User;
+import data.User;
 
 public interface Subject {
 	public void registerObserver(Observer o);

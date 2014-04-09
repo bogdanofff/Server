@@ -2,7 +2,7 @@ package dao;
 
 import java.sql.SQLException;
 
-import Main.User;
+import data.User;
 
 public interface UserDao {
 	
